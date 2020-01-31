@@ -1,0 +1,33 @@
+Final Assignment
+
+Objective: Imagine that you will be modelling Market Capitalization (i.e. Market Cap is your target variable (dependent variable) and the other variables are your features (independent variables)). Keep this in mind when exploring the dataset. The end goal is to create and save a DataFrame containing the following variables: Ticker, Total Assets, Number of Employees, Market Capitalization, Total Number of Transactions, Average Transaction Value. 
+
+You may collaborate and help each other to finish this assignment. Ignore the extra credit options until you've done all 8 steps. 
+
+In order to complete this task you will need to use the following csv files:
+(a) "SPTSXComposite.csv" - TotalAssets
+(b) "SPTSXCap_Employees.csv" - NumberEmployees & MarketCapitalization
+(c) "SP_Transactions.csv" - Transaction variables - Make sure you explore before blindly joining with the above datasets. 
+
+Before you start:
+- Create a new directory
+- Create a .py file - use an IDE of your choice (I recommend Spyder)
+- Set up tracking with git for this new directory
+
+Steps:
+- 1. Create a DataFrame based on the guidance above. Don't forget to drop duplicates from dataset (b). Extra credit: Add a variable for the Total Value of Merger/Acquisition Transactions.
+ 
+- 2. Perform high level data validation - assess whether the range of each variable is reasonable, based on your intuition. 
+
+- 3. Identify any rows/observations containing NaN or null values. Handle them as you see fit. Hint: If a company does not appear in the transactions dataset, it is because it closed no transactions during the relevant time period. Keep track of the ticker number of any observations that were removed or altered. 
+
+- 4. Consider the histogram of Market Capitalization. What does it tell you? Extra credit: Consider and apply an appropriate transformation to the Market Capitalization variable.
+
+- 5. Explore the relationships between Market Capitalization and the other variables using scatter plots and a correlation matrix. Are the relationships strong or weak, positive or negative, linear or not? 
+
+- 6. Save the cleaned DataFrame as a csv or excel file (df.to_csv(path) or df.to_excel(path)). (Create a new directory for your outputs/reports)
+
+- 7. Go back over your code, if you have not defined any functions, refactor your code to include at least one function. Extra credit: Put your functions in a separate .py file and import it as a module. Extra, extra credit: Create a package containing your functions file so that you can use the functions for other projects.
+
+- 8. Commit your code to git
+ 
